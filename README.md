@@ -188,6 +188,8 @@ Fake-Job-Posting-Detection/
 ## Conclusion
 This project demonstrates the practical application of transformer-based NLP models in solving real-world problems. By combining deep learning with a real-time web interface, the system provides an intelligent, scalable solution to detect fake job postings and protect job seekers.
 
+---
+
 ## Author
 **Sanjana Nathani**
 M.Sc. Data Science, DAU Gandhinagar
