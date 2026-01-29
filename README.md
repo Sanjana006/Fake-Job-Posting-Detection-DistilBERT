@@ -192,6 +192,9 @@ This project demonstrates the practical application of transformer-based NLP mod
 
 ## Author
 **Sanjana Nathani**
+
 M.Sc. Data Science, DAU Gandhinagar
+
 Aspiring Data Scientist
+
 LinkedIn: [https://www.linkedin.com/in/sanjana-nathani-26a42727b/](https://www.linkedin.com/in/sanjana-nathani-26a42727b/)
