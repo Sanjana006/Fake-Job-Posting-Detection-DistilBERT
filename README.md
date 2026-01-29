@@ -23,23 +23,24 @@ Fraudulent job postings commonly include unrealistic compensation, urgency-based
 ---
 
 ## Project Structure
-├── App/  
-│   ├── static/  
-│   │   └── style.css  
-│   ├── templates/  
-│   │   └── index.html  
-│   └── app.py  
-├── data/  
-│   └── cleaned_data.pkl  
-├── fraud_distilbert_model/  
-├── logs/  
-├── results/  
-├── Videos/  
-├── data_preprocessing.ipynb  
-├── fake_job_postings.csv  
-├── model.ipynb  
-├── test.ipynb  
-└── README.md  
+Fake-Job-Posting-Detection/
+├── App/
+│   ├── static/
+│   │   └── style.css              # CSS styling for the web interface
+│   ├── templates/
+│   │   └── index.html             # HTML template for the Flask app
+│   └── app.py                     # Flask backend application
+├── data/
+│   └── cleaned_data.pkl           # Preprocessed dataset
+├── fraud_distilbert_model/        # Saved DistilBERT model and tokenizer
+├── logs/                          # Training logs
+├── results/                       # Model evaluation results
+├── Videos/                        # Project demo videos
+├── data_preprocessing.ipynb       # Data cleaning and preprocessing
+├── fake_job_postings.csv          # Raw job posting dataset
+├── model.ipynb                    # Model training and evaluation
+├── test.ipynb                     # Testing and experimentation notebook
+└── README.md                      # Project documentation
 
 ---
 
