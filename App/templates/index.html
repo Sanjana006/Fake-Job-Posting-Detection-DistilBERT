@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Fake Job Posting Detection</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Fake Job Posting Detection</h1>
+        <p class="subtitle">AI-based screening using NLP</p>
+
+        <form method="POST">
+            <input type="text" name="job_title" placeholder="Job Title"
+                value="{{ form_data.job_title if form_data else '' }}">
+
+            <textarea name="company_profile"
+                placeholder="Company Profile">{{ form_data.company_profile if form_data else '' }}</textarea>
+
+            <textarea name="description"
+                placeholder="Job Description">{{ form_data.description if form_data else '' }}</textarea>
+
+            <textarea name="requirements"
+                placeholder="Requirements">{{ form_data.requirements if form_data else '' }}</textarea>
+
+            <textarea name="benefits" placeholder="Benefits">{{ form_data.benefits if form_data else '' }}</textarea>
+
+
+            <button type="submit">Check Job Authenticity</button>
+        </form>
+
+        {% if result %}
+        <div class="result">
+            <h2>{{ result.message }}</h2>
+            <p><strong>Confidence:</strong> {{ result.confidence }}%</p>
+        </div>
+        {% endif %}
+    </div>
+
+</body>
+
+</html>
