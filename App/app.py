@@ -3,9 +3,18 @@ import torch
 import torch.nn.functional as F
 from transformers import DistilBertForSequenceClassification, DistilBertTokenizerFast
 
+
+import os
+
+print("CURRENT WORKING DIRECTORY:", os.getcwd())
+print("FILES HERE:", os.listdir())
+
+
 app = Flask(__name__)
 
-MODEL_PATH = "fraud_distilbert_model"
+# Resolve the path to the model directory which is in the parent folder
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+MODEL_PATH = os.path.join(BASE_DIR, "fraud_distilbert_model")
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 # Load YOUR trained model
@@ -13,7 +22,6 @@ model = DistilBertForSequenceClassification.from_pretrained(MODEL_PATH)
 tokenizer = DistilBertTokenizerFast.from_pretrained(MODEL_PATH)
 model.to(device)
 model.eval()
-
 
 def format_job_text(job_title, company_profile, description, requirements, benefits):
     """
