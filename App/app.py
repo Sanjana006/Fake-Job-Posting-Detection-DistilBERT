@@ -218,14 +218,23 @@ hr {
 """, unsafe_allow_html=True)
 
 
+HF_MODEL = "your-username/fraud-model-repo"
+
+
 # ── Model loading (cached) ─────────────────────────────────────────────────────
 @st.cache_resource(show_spinner=False)
 def load_model():
     BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     MODEL_PATH = os.path.join(BASE_DIR, "fraud_distilbert_model")
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    mdl = DistilBertForSequenceClassification.from_pretrained(MODEL_PATH)
-    tok = DistilBertTokenizerFast.from_pretrained(MODEL_PATH)
+    
+    if os.path.exists(MODEL_PATH):
+        target = MODEL_PATH
+    else:
+        target = HF_MODEL
+        
+    mdl = DistilBertForSequenceClassification.from_pretrained(target)
+    tok = DistilBertTokenizerFast.from_pretrained(target)
     mdl.to(device)
     mdl.eval()
     return mdl, tok, device
