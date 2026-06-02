@@ -218,7 +218,7 @@ hr {
 """, unsafe_allow_html=True)
 
 
-HF_MODEL = "your-username/fraud-model-repo"
+HF_MODEL = "Sanjana006/fake-job-distilbert"
 
 
 # ── Model loading (cached) ─────────────────────────────────────────────────────
