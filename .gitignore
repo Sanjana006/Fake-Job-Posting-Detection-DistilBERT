@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+*.egg-info/
+dist/
+build/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Model weights & checkpoints (too large for GitHub - use HuggingFace Hub instead)
+*.safetensors
+*.pt
+*.bin
+*.ckpt
+*.pth
+results/
+checkpoints/
+fraud_distilbert_model/
+
+# Datasets (too large for GitHub - host on HuggingFace Datasets or Kaggle)
+*.csv
+*.tsv
+data/
+datasets/
+
+# Logs
+logs/
+*.log
+runs/
+wandb/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Environment
+.env
+*.env
