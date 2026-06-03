@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="YOUR_LIVE_DEPLOYMENT_LINK_HERE">
+  <a href="https://fake-job-posting-detection-distilbert.streamlit.app/">
     <img src="https://img.shields.io/badge/🚀%20Live%20Demo-Click%20Here-brightgreen?style=for-the-badge"/>
   </a>
 </p>
@@ -171,7 +171,7 @@ This project uses **DistilBERT** (`distilbert-base-uncased`), a lightweight and 
 | Inference Speed | ~40% faster | Baseline |
 | Accuracy (GLUE) | 97% of BERT | 100% |
 | Memory Usage | Lower | Higher |
-| Suitable for real-time | ✅ Yes | ⚠️ Slower |
+| Suitable for real-time | Yes | Slower |
 
 A **classification head** (linear layer → 2 output logits) is added on top of the `[CLS]` token representation, then fine-tuned end-to-end on the labelled dataset.
 
@@ -272,14 +272,14 @@ def predict_fraud(text, model, tokenizer, device):
 The model is deployed as a **Streamlit web application** with a fully custom dark glassmorphism UI.
 
 ### Features:
-- 🎨 **Animated dark gradient background** — feels alive and modern
-- 🪟 **Glassmorphism form panel** — translucent input area with blur effect
-- 📊 **Real-time stats** — accuracy, training scale, inference time displayed as metric cards
-- 📝 **2-column input layout** — efficient data entry for all 5 job fields
-- ⚡ **Instant prediction** — DistilBERT inference in under 1 second
-- 🟢 **Green result card** for genuine postings with animated confidence bar
-- 🔴 **Red result card** for fraudulent postings with glowing warning effect
-- 🧠 **Model caching** via `@st.cache_resource` — loads only once per session
+- **Animated dark gradient background** — feels alive and modern
+- **Glassmorphism form panel** — translucent input area with blur effect
+- **Real-time stats** — accuracy, training scale, inference time displayed as metric cards
+- **2-column input layout** — efficient data entry for all 5 job fields
+- **Instant prediction** — DistilBERT inference in under 1 second
+- **Green result card** for genuine postings with animated confidence bar
+- **Red result card** for fraudulent postings with glowing warning effect
+- **Model caching** via `@st.cache_resource` — loads only once per session
 
 ### Running the App:
 ```bash
@@ -403,7 +403,7 @@ M.Sc. Data Science, DAU Gandhinagar | Aspiring Data Scientist
   <a href="https://github.com/Sanjana006">
     <img src="https://img.shields.io/badge/GitHub-Profile-181717?style=for-the-badge&logo=github&logoColor=white"/>
   </a>
-  <a href="YOUR_LIVE_DEPLOYMENT_LINK_HERE">
+  <a href="https://fake-job-posting-detection-distilbert.streamlit.app/">
     <img src="https://img.shields.io/badge/🚀%20Live%20Demo-Try%20It-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white"/>
   </a>
 </p>
