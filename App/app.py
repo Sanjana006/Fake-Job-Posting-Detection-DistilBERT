@@ -315,7 +315,7 @@ with c1:
 with c2:
     st.metric("Jobs Trained On", "17K+")
 with c3:
-    st.metric("Inference Time", "< 5s")
+    st.metric("Inference Time", "< 1s")
 
 st.markdown("<div style='height:28px'></div>", unsafe_allow_html=True)
 
